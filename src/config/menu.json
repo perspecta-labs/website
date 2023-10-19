@@ -1,0 +1,30 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Projects",
+      "url": "/elements"
+    },
+    {
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Contact us",
+      "url": "/contact"
+    },
+    {
+      "name": "About us",
+      "url": "/about"
+    }
+  ]
+}
