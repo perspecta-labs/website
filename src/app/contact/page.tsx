@@ -1,44 +1,47 @@
-import config from "@/config/config.json";
-import { getListPage } from "@/lib/contentParser";
-import PageHeader from "@/partials/PageHeader";
-import SeoMeta from "@/partials/SeoMeta";
-import { RegularPage } from "@/types";
+"use client"
 
-const Contact = async () => {
-  const data: RegularPage = getListPage("contact/_index.md");
-  const { frontmatter } = data;
-  const { title, description, meta_title, image } = frontmatter;
-  const { contact_form_action } = config.params;
+import HeaderPage from "../../components/Header"
+
+const Contact = () => {
 
   return (
     <>
-      <SeoMeta
-        title={title}
-        meta_title={meta_title}
-        description={description}
-        image={image}
-      />
-      <PageHeader title={title} />
+      <HeaderPage title={"Don't hesitate to get in touch"} />
       <section className="section-sm">
         <div className="container">
           <div className="row">
             <div className="mx-auto md:col-10 lg:col-6">
-              <form action={contact_form_action} method="POST">
-                <div className="mb-6">
-                  <label htmlFor="name" className="form-label">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    className="form-input"
-                    placeholder="John Doe"
-                    type="text"
-                  />
+              <form action="https://api.web3forms.com/submit" method="POST" name="contactForm">
+                <input type="hidden" name="access_key" value="b07868c8-8314-41b1-9174-2a4d9055263d"/>
+                <div className="mb-6 flex flex-row justify-between">
+                  <div>
+                    <label htmlFor="fname" className="form-label">
+                      First Name <span>*</span>
+                    </label>
+                    <input
+                      id="fname"
+                      name="fname"
+                      className="form-input w-64"
+                      placeholder="John Doe"
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="lname" className="form-label">
+                      Last Name <span>*</span>
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      className="form-input w-64"
+                      placeholder="John Doe"
+                      type="text"
+                    />
+                  </div>
                 </div>
                 <div className="mb-6">
                   <label htmlFor="email" className="form-label">
-                    Working Mail <span className="text-red-500">*</span>
+                    Email <span>*</span>
                   </label>
                   <input
                     id="email"
@@ -49,14 +52,38 @@ const Contact = async () => {
                   />
                 </div>
                 <div className="mb-6">
+                  <label htmlFor="company" className="form-label">
+                    Company/Organization <span>*</span>
+                  </label>
+                  <input
+                    id="company"
+                    name="company"
+                    className="form-input"
+                    placeholder="Perspecta Labs"
+                    type="text"
+                  />
+                </div>
+                <div className="mb-6">
+                  <label htmlFor="phone" className="form-label">
+                    Phone <span>*</span>
+                  </label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    className="form-input"
+                    placeholder="Phone"
+                    type="text"
+                  />
+                </div>
+                <div className="mb-6">
                   <label htmlFor="message" className="form-label">
-                    Anything else? <span className="text-red-500">*</span>
+                    Message <span>*</span>
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     className="form-input"
-                    placeholder="Message goes here..."
+                    placeholder="Message"
                     rows={8}
                   ></textarea>
                 </div>

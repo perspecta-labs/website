@@ -1,15 +1,15 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "Perspecta Labs",
+    "base_url": "https://perspectalabs.ca",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
-    "logo_width": "150",
-    "logo_height": "27",
-    "logo_text": "Nextplate"
+    "favicon": "/perspecta-images/monos/pl-black-mono-layover.png",
+    "logo": "/perspecta-images/logos/pl-white-logo2.png",
+    "logo_darkmode": "/perspecta-images/logos/pl-black-logo2.png",
+    "logo_width": "270",
+    "logo_height": "70",
+    "logo_text": "Perspecta Labs"
   },
 
   "settings": {
@@ -24,7 +24,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Designed And Developed by [Perspecta Labs]"
   },
 
   "navigation_button": {
