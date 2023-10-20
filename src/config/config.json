@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Perspecta Labs",
-    "base_url": "https://perspectalabs.ca",
+    "base_url": "https://perspecta-labs.github.io",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/perspecta-images/monos/pl-black-mono-layover.png",
