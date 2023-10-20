@@ -1,6 +1,6 @@
 "use client"
 
-import HeaderPage from "../../components/Header"
+import HeaderPage from "@/personal_components/Header"
 
 const Contact = () => {
 

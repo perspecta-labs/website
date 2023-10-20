@@ -22,6 +22,7 @@
       }
     ],
     "paths": {
+      "@/personal_components/*": ["./src/components/*"],
       "@/components/*": ["./src/layouts/components/*"],
       "@/shortcodes/*": ["./src/layouts/shortcodes/*"],
       "@/partials/*": ["./src/layouts/partials/*"],
