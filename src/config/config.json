@@ -4,9 +4,9 @@
     "base_url": "https://perspecta-labs.github.io",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/perspecta-images/monos/pl-black-mono-layover.png",
-    "logo": "/perspecta-images/logos/pl-white-logo2.png",
-    "logo_darkmode": "/perspecta-images/logos/pl-black-logo2.png",
+    "favicon": "perspecta-images/monos/pl-black-mono-layover.png",
+    "logo": "perspecta-images/logos/pl-white-logo2.png",
+    "logo_darkmode": "perspecta-images/logos/pl-black-logo2.png",
     "logo_width": "270",
     "logo_height": "70",
     "logo_text": "Perspecta Labs"
@@ -41,7 +41,7 @@
 
   "metadata": {
     "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "images/og-image.png",
     "meta_description": "Next Boilerplate"
   }
 }
