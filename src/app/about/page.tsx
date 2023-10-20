@@ -1,4 +1,4 @@
-import HeaderPage from "@/personal_components/Header";
+import HeaderPage from "@/components/Header";
 import ImageFallback from "@/helpers/ImageFallback";
 import MDXContent from "@/helpers/MDXContent";
 import { getListPage } from "@/lib/contentParser";

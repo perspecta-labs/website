@@ -1,4 +1,4 @@
-const HeaderPage = ({ title }) => {
+const HeaderPage = ({ title }: { title: string }) => {
     return (
         <div className="w-3/4">
             <div className="text-center">
