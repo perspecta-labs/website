@@ -1,10 +1,10 @@
 const HeaderPage = ({ title }: { title: string }) => {
     return (
-        <div className="w-3/4">
+        <div className="w-full">
             <div className="text-center">
-                <div className="font-bold text-3xl h1">
+                <h1 className="font-bold text-6xl h1">
                     {title}
-                </div>
+                </h1>
             </div>
         </div>
     )

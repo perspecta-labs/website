@@ -19,7 +19,7 @@ const SeoMeta = ({
   canonical?: string;
   noindex?: boolean;
 }) => {
-  const { meta_image, meta_author, meta_description } = config.metadata;
+  const { meta_author, meta_description } = config.metadata;
   const { base_url } = config.site;
   const pathname = usePathname();
 
@@ -77,19 +77,6 @@ const SeoMeta = ({
         name="twitter:description"
         content={plainify(description ? description : meta_description)}
       />
-
-      {/* og-image */}
-      <meta
-        property="og:image"
-        content={`${base_url}${image ? image : meta_image}`}
-      />
-
-      {/* twitter-image */}
-      <meta
-        name="twitter:image"
-        content={`${base_url}${image ? image : meta_image}`}
-      />
-      <meta name="twitter:card" content="summary_large_image" />
     </>
   );
 };

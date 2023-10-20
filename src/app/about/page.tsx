@@ -7,11 +7,13 @@ import { RegularPage } from "@/types";
 
 const About = () => {
   const data: RegularPage = getListPage("about/_index.md");
-  const { frontmatter, content } = data;
-  const { title, meta_title, description, image } = frontmatter;
+  const { frontmatter } = data;
+  const { title } = frontmatter;
 
   const contentVasu = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at."
   const contentVansh = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at."
+  const imgVansh = "perspecta-images/about/imgVansh.png"
+  const imgVasu = "perspecta-images/about/imgVasu.png"
 
   return (
     <>
@@ -22,12 +24,12 @@ const About = () => {
         <div className="container">
           <div className="flex flex-row gap-24 justify-center">
             <div className="text-center">
-              {image && (
+              {imgVansh && (
                 <ImageFallback
                   className="mx-auto mb-6 rounded-lg"
-                  src={image}
-                  width={200}
-                  height={200}
+                  src={imgVansh}
+                  width={300}
+                  height={300}
                   alt={title}
                 />
               )}
@@ -40,12 +42,12 @@ const About = () => {
               </div>
             </div>
             <div className="text-center">
-              {image && (
+              {imgVasu && (
                 <ImageFallback
                   className="mx-auto mb-6 rounded-lg"
-                  src={image}
-                  width={200}
-                  height={200}
+                  src={imgVasu}
+                  width={300}
+                  height={300}
                   alt={title}
                 />
               )}
